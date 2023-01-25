@@ -13,6 +13,7 @@
         alertUser = () =>{
             const message = document.getElementById("message");
             message.innerHTML +="Password is wrong";
+            document.getElementById("submit").style.marginTop="3%";
         }
     </script>
 
@@ -24,23 +25,22 @@
     </div>
    <div class="box" id="box">
     <div class="container">
-        <div class="top">
+        <div class="top" style="margin-bottom:10%">
             <span>Have an account?</span>
             <header>Login</header>
         </div>
-
+        <div id="message" style="margin-left:29%;margin-bottom:3%;color:white;position: absolute;top:59%;right:45%"></div>
         <div class="input-field">
-            <label class="label" for="username">Username</label>
             <input type="text" class="input" name="username"> <!--label should be added-->
+            <label style="position:absolute;top:37%" class="label" for="username">Username</label>
         </div>
 
-        <div class="input-field">
-            <label class="label" for="password">Password</label>
+        <div class="input-field" style="margin-top:9%">
             <input type="Password" style="margin-bottom:20px" name="password" class="input">  <!--show hide password icon --> <!--label should be added-->
+            <label class="label" style="position:absolute;top:50%"  for="password">Password</label>
         </div>
-        <div id="message" style="margin-left:29%;margin-bottom:3%;color:white"></div>
         <div class="input-field" >
-            <div type="button" style="margin-left:1%" tabindex="-1"  onclick="alertUser()" class="submit"  id="" ><img src="images/icons8-arrow-50.png"/></div> <!--label should be added--> <!--non clickable by keyboard-->
+            <div type="button" style="margin-left:1%" tabindex="-1"  onclick="alertUser()" class="submit"  id="submit" ><img src="images/icons8-arrow-50.png"/></div> <!--label should be added--> <!--non clickable by keyboard-->
         </div>
 
         <div class="two-col">
