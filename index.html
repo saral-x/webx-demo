@@ -29,23 +29,24 @@
         </div>
 
         <div class="input-field">
-            <label class="label" >Username</label>
+            <p class="label" style="height:2.6667px">Username</p>
             <input type="text" class="input" placeholder="Username" id=""> <!--label should be added-->
         </div>
 
         <div class="input-field">
-            <label class="label" >Password</label>
-            <input type="Password" class="input" placeholder="Password" id="">  <!--show hide password icon --> <!--label should be added-->
+            <p class="label" style="height:2.6667px">Password</p>
+            <input type="Password" style="margin-bottom:20px" class="input" placeholder="Password" id="">  <!--show hide password icon --> <!--label should be added-->
         </div>
 
         <div class="input-field" >
-            <input type="submit"  onclick="alertUser()" class="submit" value="Login" id=""> <!--label should be added--> <!--non clickable by keyboard-->
+            <input type="submit" style="margin-left:1%" tabindex="-1"  onclick="alertUser()" class="submit" value="Login" id=""> <!--label should be added--> <!--non clickable by keyboard-->
         </div>
 
         <div class="two-col">
             <div class="one">
-               <input type="checkbox" tabindex="-1" name="" id="check">
-               <label for="check" tabindex="10"> Remember Me</label>
+               <input type="checkbox" aria-describedby="checkbox-label" tabindex="-1" name="" id="check">
+               <span id="checkbox-label"></span>
+               <label for="check" tabindex="10" tabindex="10"> Remember Me</label>
             </div>
             <div class="two">
                 <label><a href="#">Forgot password?</a></label>
