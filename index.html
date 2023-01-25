@@ -11,7 +11,8 @@
     <script>
         let box = document.getElementById("box");
         alertUser = () =>{
-            window.alert("password is wrong");
+            const message = document.getElementById("message");
+            message.innerHTML +="Password is wrong";
         }
     </script>
 
@@ -29,17 +30,17 @@
         </div>
 
         <div class="input-field">
-            <p class="label" style="height:2.6667px">Username</p>
-            <input type="text" class="input" placeholder="Username" id=""> <!--label should be added-->
+            <label class="label" for="username">Username</label>
+            <input type="text" class="input" name="username"> <!--label should be added-->
         </div>
 
         <div class="input-field">
-            <p class="label" style="height:2.6667px">Password</p>
-            <input type="Password" style="margin-bottom:20px" class="input" placeholder="Password" id="">  <!--show hide password icon --> <!--label should be added-->
+            <label class="label" for="password">Password</label>
+            <input type="Password" style="margin-bottom:20px" name="password" class="input">  <!--show hide password icon --> <!--label should be added-->
         </div>
-
+        <div id="message" style="margin-left:29%;margin-bottom:3%;color:white"></div>
         <div class="input-field" >
-            <input type="submit" style="margin-left:1%" tabindex="-1"  onclick="alertUser()" class="submit" value="Login" id=""> <!--label should be added--> <!--non clickable by keyboard-->
+            <div type="button" style="margin-left:1%" tabindex="-1"  onclick="alertUser()" class="submit"  id="" ><img src="images/icons8-arrow-50.png"/></div> <!--label should be added--> <!--non clickable by keyboard-->
         </div>
 
         <div class="two-col">
