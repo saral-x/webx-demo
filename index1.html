@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boxicons-master/css/boxicons.css">
+
+    <title>Accessible web page | I-stem</title>
+    <script>
+        let box = document.getElementById("box");
+        alertUser = () =>{
+            window.alert("password is wrong");
+        }
+    </script>
+
+</head>
+<body>
+    <div class="header" id="header">
+        <img src="images/logo.svg" alt="I-stem logo" /> 
+        <h1 class="heading">Accessible webPage</h1> 
+    </div>
+   <div class="box" id="box">
+    <div class="container">
+        <div class="top">
+            <span>Have an account?</span>
+            <header>Login</header>
+        </div>
+
+        <div class="input-field">
+            <label class="label" for="Username">Username</label>
+            <input type="text" class="input" placeholder="Username" id="Username">
+        </div>
+
+        <div class="input-field">
+            <label class="label" for="Password">Password</label>
+            <input type="Password" class="input" placeholder="Password" id="Password">  <!--show hide password icon -->
+        </div>
+
+        <div class="input-field" >
+            <input type="submit" tabindex="-1"  onclick="alertUser()" class="submit" value="Login" id="">
+        </div>
+
+        <div class="two-col">
+            <div class="one">
+               <input type="checkbox" tabindex="-1" name="" id="check">
+               <label for="check" tabindex="10"> Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="#">Forgot password?</a></label>
+            </div>
+        </div>
+    </div>
+</div>  
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    font-family: 'poppins' ,sans-serif;
+}
+body{
+    background-color: rgb(52, 32, 79);
+    background-size: cover;
+    background-position: center;
+    
+}
+.header{
+    background-color: rgb(49, 19, 92);
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading{
+    color: #fff;
+    font-size: 200%;
+    font-weight: 600;
+    margin-right:36%;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    
+}
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.input-field .input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+    margin:3%;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.btn{
+    border:none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline:none;
+    color:black;
+    background: rgba(255,255,255,0.7);
+    transform: .3s;
+    width: 15%;
+    cursor: pointer;
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: black;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s ;
+    width: 100%;
+    margin-left: 3%;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+.one{
+    display: flex;
+}
+label a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.label{
+    color:#fff;
+}
