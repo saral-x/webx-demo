@@ -12,7 +12,11 @@
         let box = document.getElementById("box");
         alertUser = () =>{
             const message = document.getElementById("message");
-            message.innerHTML +="Password is wrong";
+message.innerHTML = "  ";
+setTimeout(() => {
+message.innerHTML +="Password is wrong";
+}, 50);
+            
         }
     </script>
 
