@@ -15,10 +15,20 @@
             message.innerHTML = "Password is wrong";
             document.getElementById("submit").style.marginTop="3%";
         }
+
+function setListeners() {
+document.getElementById("forgot_pswd").addEventListener("keydown", (e) => {
+console.log("key pressed: ", e.keyCode);
+if(e.keyCode == 13)
+e.preventDefault();
+});
+console.log("all done");
+
+}
     </script>
 
 </head>
-<body>
+<body onload="setListeners()">
     <div class="header" id="header">
         <img src="images/logo.svg" /> <!-- alt text-->
         <p class="heading">Inaccessible webPage</p> <!--H1-->
@@ -31,7 +41,7 @@
         </div>
         <div id="message" style="margin-left:29%;margin-bottom:3%;color:white;position: absolute;top:59%;right:45%"></div>
         <div class="input-field">
-            <input type="text" class="input" name="username" id="input"> <!--label should be added-->
+            <input type="text" class="input" name="username" id=""> <!--label should be added-->
             <label style="position:absolute;top:37%" class="label" for="input">Username</label>
         </div>
 
@@ -50,7 +60,7 @@
                <label for="check" tabindex="10" tabindex="10"> Remember Me</label>
             </div>
             <div class="two">
-                <label><a href="#">Forgot password?</a></label>
+                <label><a onclick="alert('Try harder to remember.')" id="forgot_pswd">Forgot password?</a></label>
             </div>
         </div>
     </div>
