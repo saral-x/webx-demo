@@ -13,25 +13,28 @@
         alertUser = () =>{
             const message = document.getElementById("message");
             message.innerHTML = "Password is wrong";
-            document.getElementById("submit").style.marginTop="3%";
+            document.getElementById("submit").style.marginTop="4%";
         }
 
-function setListeners() {
-document.getElementById("forgot_pswd").addEventListener("keydown", (e) => {
-console.log("key pressed: ", e.keyCode);
-if(e.keyCode == 13)
-e.preventDefault();
-});
-console.log("all done");
+        function setListeners() {
+            console.log("event listener fun called");
+            document.getElementById("forgot_pswd").addEventListener("keydown", (e) => {
+            console.log("key pressed: ", e.keyCode);
+            if(e.keyCode == 13){
+                console.log("enter is pressed");
+                e.preventDefault();
+            }
+            });
+            console.log("all done");
 
 }
     </script>
 
 </head>
 <body onload="setListeners()">
-    <div class="header" id="header">
-        <img src="images/logo.svg" /> <!-- alt text-->
-        <p class="heading">Inaccessible webPage</p> <!--H1-->
+    <div class="header" id="header" style="height:79.533px">
+        <img style="width:156px" src="images/logo.svg" /> <!-- alt text-->
+        <p class="heading" style="margin-top:21.44px">Inaccessible webPage</p> <!--H1-->
     </div>
    <div class="box" id="box">
     <div class="container">
@@ -40,27 +43,22 @@ console.log("all done");
             <header>Login</header>
         </div>
         <div id="message" style="margin-left:29%;margin-bottom:3%;color:white;position: absolute;top:59%;right:45%"></div>
-        <div class="input-field">
-            <input type="text" class="input" name="username" id=""> <!--label should be added-->
-            <label style="position:absolute;top:37%" class="label" for="input">Username</label>
+        <div class="input-field" style="height:55.677px;margin-left:11px;margin-top:-6px">
+            <input type="text" class="input" style="width:286.217px" name="username" id=""> <!--label should be added-->
+            <label style="position:relative;top:-64px" class="label" for="input">Username</label>
         </div>
 
-        <div class="input-field" style="margin-top:9%">
-            <input type="Password" style="margin-bottom:20px" name="password" class="input" id="input">  <!--show hide password icon --> <!--label should be added-->
-            <label class="label" style="position:absolute;top:50%"  for="input" >Password</label>
+        <div class="input-field" style="margin-top:8%;height:69.667px;margin-left:11px">
+            <input type="Password" style="margin-bottom:20px;width:286.217px" name="password" class="input" id="input">  <!--show hide password icon --> <!--label should be added-->
+            <label class="label" style="position:relative;top:-84px"  for="input" >Password</label>
         </div>
-        <div class="input-field" >
-            <button type="button" style="margin-left:1%" tabindex="-1"  onclick="alertUser()" class="submit"  id="" ><img src="images/icons8-arrow-50.png"/></button> <!--label should be added--> <!--non clickable by keyboard-->
+        <div class="input-field" id="next_button" style="margin-left:11px" >
+            <button type="button" style="margin-left:1%;margin-bottom:8px;margin-top:-4px;width:328px" tabindex="-1"  onclick="alertUser()" class="submit"  id="submit" ><img src="images/icons8-arrow-50.png"/></button> <!--label should be added--> <!--non clickable by keyboard-->
         </div>
 
         <div class="two-col">
-            <div class="one">
-               <input type="checkbox" aria-describedby="checkbox-label" tabindex="-1" name="" id="check">
-               <span id="checkbox-label"></span>
-               <label for="check" tabindex="10" tabindex="10"> Remember Me</label>
-            </div>
             <div class="two">
-                <label><a onclick="alert('Try harder to remember.')" id="forgot_pswd">Forgot password?</a></label>
+                <a onclick="alert('Try harder to remember.')" id="forgot_pswd" style="cursor:pointer">Forgot password?</a>
             </div>
         </div>
     </div>

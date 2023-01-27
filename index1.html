@@ -34,7 +34,7 @@ message.innerHTML +="Password is wrong";
         </div>
 
         <div class="input-field" style="margin:3%">
-            <label class="label" style="margin-bottom:5px" for="Username">User name</label>
+            <label class="label" style="margin-bottom:5px" for="Username">Username</label>
             <input type="text" class="input" id="Username"/>
         </div>
 
@@ -43,18 +43,14 @@ message.innerHTML +="Password is wrong";
             <input type="Password"  class="input" id="Password">  <!--show hide password icon -->
         </div>
 
-        <div id="message" aria-live="polite" style="margin-left:29%;color:white"></div>
+        <div id="message" aria-live="polite" style="margin-left:29%;color:white;margin-left:104px"></div>
         <div class="input-field" style="margin:3%">
             <button type="submit" style="margin-left:1%" aria-label="Next Page" onclick="alertUser()" class="submit"  id=""><img src="images/icons8-arrow-50.png"/></button>
         </div>
 
         <div class="two-col">
-            <div class="one">
-               <input type="checkbox" name="" id="check">
-               <label for="check"> Remember Me</label>
-            </div>
             <div class="two">
-                <label><a href="#">Forgot password?</a></label>
+                <label style="cursor:pointer"><a onclick="alert('Try harder to remember.')" href="#">Forgot password?</a></label>
             </div>
         </div>
     </div>
