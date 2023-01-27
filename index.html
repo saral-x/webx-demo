@@ -12,8 +12,7 @@
         let box = document.getElementById("box");
         alertUser = () =>{
             const message = document.getElementById("message");
-            message.innerHTML = "Password is wrong";
-            document.getElementById("submit").style.marginTop="4%";
+            message.innerHTML ="Password is wrong";    
         }
 
         function setListeners() {
@@ -42,18 +41,18 @@
             <span>Have an account?</span>
             <header>Login</header>
         </div>
-        <div id="message" style="margin-left:29%;margin-bottom:3%;color:white;position: absolute;top:59%;right:45%"></div>
         <div class="input-field" style="height:55.677px;margin-left:11px;margin-top:-6px">
-            <input type="text" class="input" style="width:286.217px" name="username" id=""> <!--label should be added-->
+            <input type="text" class="input" style="width:286.217px" name="username" id="">
             <label style="position:relative;top:-64px" class="label" for="input">Username</label>
         </div>
 
         <div class="input-field" style="margin-top:8%;height:69.667px;margin-left:11px">
-            <input type="Password" style="margin-bottom:20px;width:286.217px" name="password" class="input" id="input">  <!--show hide password icon --> <!--label should be added-->
+            <input type="Password" style="margin-bottom:20px;width:286.217px;height:45.6667px" name="password" class="input" id="input"> 
             <label class="label" style="position:relative;top:-84px"  for="input" >Password</label>
         </div>
-        <div class="input-field" id="next_button" style="margin-left:11px" >
-            <button type="button" style="margin-left:1%;margin-bottom:8px;margin-top:-4px;width:328px" tabindex="-1"  onclick="alertUser()" class="submit"  id="submit" ><img src="images/icons8-arrow-50.png"/></button> <!--label should be added--> <!--non clickable by keyboard-->
+        <div id="message" style="color:white;margin-left:104px;margin-top:-10px"></div>
+        <div class="input-field" id="next_button" style="margin-left:11px;margin-top:4%" >
+            <button type="button" style="margin-left:1%;margin-bottom:8px;margin-top:-4px;width:328px" tabindex="-1"  onclick="alertUser()" class="submit"  id="submit" ><img src="images/icons8-arrow-50.png"/></button> 
         </div>
 
         <div class="two-col">

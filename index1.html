@@ -12,11 +12,10 @@
         let box = document.getElementById("box");
         alertUser = () =>{
             const message = document.getElementById("message");
-message.innerHTML = "  ";
-setTimeout(() => {
-message.innerHTML +="Password is wrong";
-}, 50);
-            
+                message.innerHTML = "  ";
+                setTimeout(() => {
+                    message.innerHTML +="Password is wrong";
+                }, 50);    
         }
     </script>
 
@@ -40,10 +39,10 @@ message.innerHTML +="Password is wrong";
 
         <div class="input-field" style="margin:3%">
             <label class="label" for="Password">Password</label>
-            <input type="Password"  class="input" id="Password">  <!--show hide password icon -->
+            <input type="Password"  class="input" id="Password"> 
         </div>
 
-        <div id="message" aria-live="polite" style="margin-left:29%;color:white;margin-left:104px"></div>
+        <div id="message" aria-live="polite" style="color:white;margin-left:104px"></div>
         <div class="input-field" style="margin:3%">
             <button type="submit" style="margin-left:1%" aria-label="Next Page" onclick="alertUser()" class="submit"  id=""><img src="images/icons8-arrow-50.png"/></button>
         </div>
