@@ -17,39 +17,57 @@
                     message.innerHTML +="Password is wrong";
                 }, 50);    
         }
+
+        let contrast = 'light';
+        const toggleContrast = () => {
+
+            if (contrast === 'light') {
+                contrast = 'dark';
+                document.body.style.backgroundColor="#000000";
+                document.getElementById("header").style.backgroundColor="#181818";
+                document.getElementById("container").style.backgroundColor="#181818";
+
+            } else {
+                contrast = 'light';
+                document.body.style.backgroundColor="rgb(52, 32, 79)";
+                document.getElementById("header").style.backgroundColor="rgb(49, 19, 92)";
+                document.getElementById("container").style.backgroundColor="rgb(49, 19, 92)";
+            }
+        };
     </script>
 
 </head>
 <body>
     <div class="header" id="header">
         <img src="images/logo.svg" alt="I-stem logo" /> 
-        <h1 class="heading">Accessible webPage</h1> 
+        <h1 class="heading" style="color:#fff">Accessible webPage</h1> 
     </div>
+    <div><button onclick="toggleContrast()" style="cursor:pointer;background-color:rgb(49, 19, 92);margin-top:2px;border-radius:5px;color:#fff">Toggle Dark Mode</button></div>
    <div class="box" id="box">
-    <div class="container">
+    <div class="container" id="container" style="padding:5px;border-radius: 5px;color:#fff">
         <div class="top">
-            <span>Have an account?</span>
-            <header>Login</header>
+            <span style="color:#fff">Have an account?</span>
+            <header style="color:#fff">Login</header>
         </div>
 
         <div class="input-field" style="margin:3%">
-            <label class="label" style="margin-bottom:5px" for="Username">Username</label>
-            <input type="text" class="input" id="Username"/>
+            <label class="label" style="margin-bottom:5px;color:#fff" for="Username">Username</label>
+            <input type="text" class="input" id="Username" style="background-color:#fff">
         </div>
 
         <div class="input-field" style="margin:3%">
-            <label class="label" for="Password">Password</label>
-            <input type="Password"  class="input" id="Password"> 
+            <label class="label" for="Password" style="color:#fff">Password</label>
+            <input type="Password"  class="input" id="Password" style="background-color:#fff"> 
         </div>
 
         <div id="message" aria-live="polite" style="color:white;margin-left:104px"></div>
         <div class="input-field" style="margin:3%">
-            <button type="submit" style="margin-left:1%" aria-label="Next Page" onclick="alertUser()" class="submit"  id=""><img src="images/icons8-arrow-50.png"/></button>
+            <button type="submit" style="margin-left:1%;background-color: #fff;" aria-label="Next Page" onclick="alertUser()" class="submit"  id="next"><img src="images/icons8-arrow-50.png"/></button>
         </div>
 
         <div class="two-col">
             <div class="two">
-                <label style="cursor:pointer"><a onclick="alert('Try harder to remember.')" href="#">Forgot password?</a></label>
+                <label style="cursor:pointer"><a onclick="alert('Try harder to remember.')" href="#" style="color:#fff">Forgot password?</a></label>
             </div>
         </div>
     </div>

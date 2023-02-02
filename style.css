@@ -16,7 +16,7 @@ body{
 }
 
 .heading{
-    color: #fff;
+    color: rgb(105,95,115);
     font-size: 200%;
     font-weight: 600;
     margin-right:36%;
@@ -32,28 +32,33 @@ body{
     display: flex;
     flex-direction: column;
     padding: 0 15px 0 15px;
+    background-color: rgb(49, 19, 92);
     
 }
 span{
-    color: #fff;
+    color: rgb(105,95,115);
     font-size: small;
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 0;
 }
 header{
-    color: #fff;
+    color: rgb(105,95,115);
     font-size: 30px;
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 0;
+}
+
+.top{
+    color:rgb(105,95,115);
 }
 .input-field .input{
     height: 45px;
     width: 87%;
     border: none;
     border-radius: 30px;
-    color: #fff;
+    color: rgb(105,95,115);
     font-size: 15px;
     padding: 0 0 0 45px;
     background: rgba(255,255,255,0.1);
@@ -61,7 +66,7 @@ header{
     
 }
 ::-webkit-input-placeholder{
-    color: #fff;
+    color: rgb(105,95,115);
 }
 .buttonContainer{
     display: flex;
@@ -103,7 +108,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #fff;
+    color:  rgb(105,95,115);
     font-size: small;
     margin-top: 10px;
 }
@@ -112,10 +117,10 @@ header{
 }
 label a{
     text-decoration: none;
-    color: #fff;
+    color: rgb(105,95,115);
 }
 
 .label{
     text-decoration: none;
-    color:#fff;
+    color:rgb(105,95,115);
 }
