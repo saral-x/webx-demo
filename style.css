@@ -62,7 +62,6 @@ header{
     font-size: 15px;
     padding: 0 0 0 45px;
     background: rgba(255,255,255,0.1);
-    outline: none;
     
 }
 ::-webkit-input-placeholder{
@@ -78,7 +77,6 @@ header{
     border-radius: 30px;
     font-size: 15px;
     height: 45px;
-    outline:none;
     color:black;
     background: rgba(255,255,255,0.7);
     transform: .3s;
@@ -90,7 +88,6 @@ header{
     border-radius: 30px;
     font-size: 15px;
     height: 45px;
-    outline: none;
     width: 100%;
     color: black;
     background: rgba(255,255,255,0.7);
