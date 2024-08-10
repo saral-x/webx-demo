@@ -46,31 +46,30 @@
     </div>
     <div><button id="togglingButton" aria-pressed="false" onclick="toggleContrast()" style="cursor:pointer;background-color:rgb(49, 19, 92);margin-top:2px;border-radius:5px;color:#fff">Dark Mode</button></div>
    <div class="box" id="box">
-    <div class="container" id="container" style="padding:5px;border-radius: 5px;color:#fff">
+    <div class="container" id="container" style="padding:5px;border-radius: 5px;color:#fff;width: 700px;">
         <div class="top">
             <span style="color:#fff">Have an account?</span>
             <header style="color:#fff">Login</header>
         </div>
 
         <div class="input-field" style="margin:3%">
-            <label class="label" style="margin-bottom:5px;color:#fff" for="Username">Username</label>
-            <input type="text" class="input" id="Username" style="background-color:#fff">
+            <label class="label" style="color:#fff" for="Username">Username</label>
+            <input type="text" class="input" id="Username" style="background-color:#fff;margin-top: 3%;">
         </div>
 
         <div class="input-field" style="margin:3%">
-            <label class="label" for="Password" style="color:#fff">Password</label>
-            <input type="Password"  class="input" id="Password" style="background-color:#fff"> 
+            <label class="label" for="Password" style="color:#fff;">Password</label>
+            <input type="Password" class="input" id="Password" style="background-color:#fff;margin-top: 3%;">
         </div>
 
-        <div id="message" aria-live="polite" style="color:white;margin-left:104px"></div>
-        <div class="input-field" style="margin:3%">
+        <div id="message" aria-live="polite" style="color:white;align-self: center;"></div>
+        <div class="input-field" style="width:50%;margin-top:7%;align-self: center;">
             <button type="submit" style="margin-left:1%;background-color: #fff;" aria-label="Next Page" onclick="alertUser()" class="submit"  id="next"><img width="42px" src="images/icons8-arrow-50.png"/></button>
         </div>
 
-        <div class="two-col">
-            <div class="two">
+        <div class="two-col" style="display: flex; justify-content: center; margin-top: 20px;">
                 <label style="cursor:pointer"><a onclick="alert('Try harder to remember.')" href="#" style="color:#fff">Forgot password?</a></label>
-            </div>
+            
         </div>
     </div>
 </div>  
