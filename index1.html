@@ -40,36 +40,44 @@
 
 </head>
 <body>
-    
+
     <div class="header" id="header">
-        <img src="images/logo.svg" alt="SaralX logo" /> 
-        <h1 class="heading" style="color:#fff">Accessible webPage</h1> 
+        <img src="images/logo.svg" style="width:10%" alt="SaralX logo" />
+        <h1 class="heading" style="color:#fff;margin-top:2%">Accessible webPage</h1>
     </div>
-    <div><button id="togglingButton" aria-pressed="false" onclick="toggleContrast()" style="cursor:pointer;background-color:rgb(49, 19, 92);margin-top:2px;border-radius:5px;color:#fff">Dark Mode</button></div>
-   <div class="box" id="box">
-    <div class="container" id="container" style="padding:5px;border-radius: 5px;color:#fff;width: 700px;">
-        <div class="top">
-            <span style="color:#fff">Have an account?</span>
-            <header style="color:#fff">Login</header>
+    <div>
+        <button id="togglingButton" aria-pressed="false" onclick="toggleContrast()"
+            style="cursor:pointer;background-color:rgb(49, 19, 92);margin-top:2px;font-size:x-large; border-radius:5px;color:#fff">
+            Dark Mode
+        </button>
+    </div>
+    <div class="box" id="box" style="margin-top:1.5%">
+        <div class="container" id="container" style="padding:5px;border-radius: 5px;color:#fff;width: 60%;">
+            <div class="top" style="margin-bottom:5%; text-align: center;">
+                <span style="color:#fff" class="label">Have an account?</span>
+                <header style="color:#fff;font-size: 50px;">Login</header>
         </div>
 
-        <div class="input-field" style="margin:3%">
-            <label class="label" style="color:#fff" for="Username">Username</label>
-            <input type="text" class="input" id="Username" style="background-color:#fff;margin-top: 3%;">
+        <div class="input-field" style="display: flex; flex-direction: column; align-items: center; ">
+            <label class="label" style="color:#fff;padding-bottom: 2%;" for="Username">Username</label>
+            <input type="text" class="input" id="Username" style="background-color:#fff;width: 70%;">
         </div>
 
-        <div class="input-field" style="margin:3%">
-            <label class="label" for="Password" style="color:#fff;">Password</label>
-            <input type="Password" class="input" id="Password" style="background-color:#fff;margin-top: 3%;">
+        <div class="input-field" style="display: flex; flex-direction: column; align-items: center; margin-top:20px;">
+            <label class="label" for="Password" style="color:#fff;padding-bottom: 2%;">Password</label>
+            <input type="Password" class="input" id="Password" style="background-color:#fff;width: 70%;">
         </div>
 
-        <div id="message" aria-live="polite" style="color:white;align-self: center;"></div>
-        <div class="input-field" style="width:50%;margin-top:7%;align-self: center;">
-            <button type="submit" style="margin-left:1%;background-color: #fff;" aria-label="Next Page" onclick="alertUser()" class="submit"  id="next"><img width="42px" src="images/icons8-arrow-50.png"/></button>
+        <div id="message" aria-live="polite" class="message"></div>
+        <div class="input-field next_button">
+            <button type="submit" style="background-color: #fff;" aria-label="Next Page" onclick="alertUser()" class="submit"
+                id="next">
+                <img width="90px" src="images/icons8-arrow-50.png" />
+            </button>
         </div>
 
-        <div class="two-col" style="display: flex; justify-content: center; margin-top: 20px;">
-                <label style="cursor:pointer"><a onclick="alert('Try harder to remember.')" href="#" style="color:#fff">Forgot password?</a></label>
+        <div class="two-col">
+            <a onclick="alert('Try harder to remember.')" href="#" style="color:#fff;cursor:pointer">Forgot password?</a>
             
         </div>
     </div>

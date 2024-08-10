@@ -32,33 +32,34 @@
 
 </head>
 <body onload="setListeners()">
-    <div class="header" id="header" style="height:79.533px">
-        <img style="width:156px" src="images/logo.svg" /> <!-- alt text-->
-        <p class="heading" style="margin-top:21.44px">Inaccessible webPage</p> <!--H1-->
+    <div class="header" id="header" style="height:100%">
+        <img style="width:10%" src="images/logo.svg" /> <!-- alt text-->
+        <p class="heading" style="margin-top:2%">Inaccessible webPage</p> <!--H1-->
     </div>
     <div class="box" id="box" style="margin-top:1.5%">
-        <div class="container" id="container" style="padding:20px; border-radius: 5px; width: 700px;">
+        <div class="container" id="container" style="padding:20px; border-radius: 5px; width: 60%;">
             <div class="top" style="margin-bottom:5%; text-align: center;">
-                <span>Have an account?</span>
-                <header>Login</header>
+                <span class="label">Have an account?</span>
+                <header style="font-size: 50px;">Login</header>
             </div>
             <div class="input-field" style="display: flex; flex-direction: column; align-items: center; ">
                 <label class="label" for="input" style="padding-bottom: 2%;">Username</label>
-                <input type="text" class="input" style="width:500px;" name="username" id="">
+                <input type="text" class="input" style="width:70%;" name="username" id="">
             </div>
 
             <div class="input-field" style="display: flex; flex-direction: column; align-items: center; margin-top:20px;">
                 <label class="label" for="input" style="padding-bottom: 2%;">Password</label>
-                <input type="Password" style="width:500px;" name="password" class="input" id="input">
+                <input type="Password" style="width:70%;" name="password" class="input" id="input">
             </div>
-            <div id="message" style="color:white; text-align:center; margin-top:10px;"></div>
+            <div id="message" class="message"></div>
             
-            <div class="input-field" id="next_button" style="display: flex; justify-content: center; margin-top:7%;">
-                <button type="button" style="width:328px" onclick="alertUser()" class="submit" id="submit"><img width="42px"
-                        src="images/icons8-arrow-50.png" /></button>
+            <div class="input-field next_button">
+                <button type="button" onclick="alertUser()" class="submit" id="submit">
+                    <img width="90px" src="images/icons8-arrow-50.png" />
+                </button>
             </div>
 
-            <div class="two-col" style="display: flex; justify-content: center; margin-top: 20px;">
+            <div class="two-col">
                 <a onclick="alert('Try harder to remember.')" id="forgot_pswd" style="cursor:pointer">Forgot password?</a>
             </div>
         </div>
